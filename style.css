@@ -1,0 +1,15 @@
+.centerScreen{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#memberName{
+    margin-top: 50px;
+}
+
+#memberImage{
+    margin-bottom: 50px;
+    height: 400px;
+}

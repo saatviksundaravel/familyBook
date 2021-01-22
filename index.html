@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+<title>My family</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1 class="centerScreen">My family book</h1>
+<img id="memberImage" class="centerScreen" >
+<h2 id="memberName" class="centerScreen"></h2>
+<button class="centerScreen" onclick="nextSlide()">Next</button>
+
+</body>
+
+<script>
+
+var images=["cover.jpg","sundaravel.jpeg","madhana.jpg","rithanya.jpeg","saatvik.jpg"];
+var names=["","Sundaravel(Dad)","Madhana(Mom)","Rithanya(Sis)","Saatvik(Me)"];
+var currentSlide=0;
+
+document.getElementById("memberImage").src=images[0];
+
+function nextSlide(){
+    currentSlide++;
+    if(currentSlide==names.length){
+        currentSlide=0;
+    }
+    document.getElementById("memberName").innerHTML=names[currentSlide];
+    document.getElementById("memberImage").src=images[currentSlide];
+    
+}
+
+
+</script>
+
+</html>
